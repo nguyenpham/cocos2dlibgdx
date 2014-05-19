@@ -37,19 +37,19 @@ To run the demo on destop:
 - Import them into eclipse as normal Java projects
 - Right click on project cclgdxdemos-desktop and select Run as/Java Application
 
-![Main menu](https://github.com/nguyenpham/cocos2dlibgdx/blob/img0.png?raw=true)
-![Demo menu](https://github.com/nguyenpham/cocos2dlibgdx/blob/img1.png?raw=true)
-![Sprites, sprite sheets](https://github.com/nguyenpham/cocos2dlibgdx/blob/img2.png?raw=true)
-![Text, labels](https://github.com/nguyenpham/cocos2dlibgdx/blob/img3.png?raw=true)
-![Scale, rotate, move](https://github.com/nguyenpham/cocos2dlibgdx/blob/img4.png?raw=true)
-![Animations](https://github.com/nguyenpham/cocos2dlibgdx/blob/img5.png?raw=true)
-![Simple game](https://github.com/nguyenpham/cocos2dlibgdx/blob/img6.png?raw=true)
+![Main menu](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img0.png?raw=true)
+![Demo menu](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img1.png?raw=true)
+![Sprites, sprite sheets](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img2.png?raw=true)
+![Text, labels](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img3.png?raw=true)
+![Scale, rotate, move](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img4.png?raw=true)
+![Animations](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img5.png?raw=true)
+![Simple game](https://github.com/nguyenpham/cocos2dlibgdx/tree/master/blob/img6.png?raw=true)
 
 
 Author
 ----------
 
-Cocos2D-LibGdx has been developing by Nguyen Hong Pham (from softgaroo.com)
+Cocos2D-LibGdx has been developing by Nguyen Hong Pham (from [softgaroo.com](html://softgaroo.com))
 
 
 Acknowledgement
