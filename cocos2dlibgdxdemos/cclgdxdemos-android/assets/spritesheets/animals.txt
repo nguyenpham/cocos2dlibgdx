@@ -1,0 +1,39 @@
+animals.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fish
+  rotate: false
+  xy: 256, 462
+  size: 232, 174
+  orig: 256, 256
+  offset: 11, 51
+  index: -1
+panda
+  rotate: true
+  xy: 2, 258
+  size: 228, 252
+  orig: 256, 256
+  offset: 0, 1
+  index: -1
+squirrel
+  rotate: true
+  xy: 260, 2
+  size: 200, 250
+  orig: 256, 256
+  offset: 24, 2
+  index: -1
+cat-fight
+  rotate: true
+  xy: 260, 204
+  size: 256, 234
+  orig: 256, 256
+  offset: 0, 9
+  index: -1
+elephant
+  rotate: true
+  xy: 2, 2
+  size: 254, 256
+  orig: 256, 256
+  offset: 2, 0
+  index: -1

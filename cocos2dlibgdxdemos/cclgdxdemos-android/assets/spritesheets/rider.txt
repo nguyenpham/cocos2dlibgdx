@@ -1,0 +1,88 @@
+rider.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+h1
+  rotate: true
+  xy: 275, 323
+  size: 143, 93
+  orig: 155, 93
+  offset: 2, 0
+  index: -1
+h2
+  rotate: true
+  xy: 184, 178
+  size: 143, 93
+  orig: 155, 93
+  offset: 4, 0
+  index: -1
+h3
+  rotate: true
+  xy: 180, 339
+  size: 145, 93
+  orig: 155, 93
+  offset: 2, 0
+  index: -1
+h4
+  rotate: true
+  xy: 87, 341
+  size: 147, 91
+  orig: 155, 93
+  offset: 3, 0
+  index: -1
+h5
+  rotate: true
+  xy: 2, 190
+  size: 149, 89
+  orig: 155, 93
+  offset: 6, 2
+  index: -1
+h6
+  rotate: false
+  xy: 310, 2
+  size: 151, 93
+  orig: 155, 93
+  offset: 0, 0
+  index: -1
+h7
+  rotate: false
+  xy: 2, 95
+  size: 151, 93
+  orig: 155, 93
+  offset: 0, 0
+  index: -1
+h10
+  rotate: true
+  xy: 93, 190
+  size: 147, 89
+  orig: 155, 93
+  offset: 3, 3
+  index: -1
+h8
+  rotate: false
+  xy: 2, 2
+  size: 153, 91
+  orig: 155, 93
+  offset: 0, 2
+  index: -1
+h11
+  rotate: true
+  xy: 2, 341
+  size: 149, 83
+  orig: 155, 93
+  offset: 3, 7
+  index: -1
+h9
+  rotate: false
+  xy: 157, 2
+  size: 151, 93
+  orig: 155, 93
+  offset: 2, 0
+  index: -1
+h12
+  rotate: false
+  xy: 155, 97
+  size: 147, 79
+  orig: 155, 93
+  offset: 1, 13
+  index: -1
