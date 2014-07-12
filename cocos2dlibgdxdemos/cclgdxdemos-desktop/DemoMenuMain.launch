@@ -8,5 +8,5 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.softgaroo.cclgdxdemos.DemoMenuMain"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="cclgdxdemos-desktop"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:cclgdxdemos-android/assets}"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="${workspace_loc:cclgdxdemos-desktop/assets}"/>
 </launchConfiguration>
