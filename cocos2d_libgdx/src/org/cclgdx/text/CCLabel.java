@@ -12,7 +12,7 @@ import org.cclgdx.types.ccColor4B;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.BitmapFont.TextBounds;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -47,6 +47,7 @@ public class CCLabel extends CCSprite {
 	private int paddingHeight = DEFAULT_PADDING_H;
 	private boolean autoSetSize;
 	private boolean needCreateInternalSprite;
+	private static GlyphLayout textBounds = new GlyphLayout();
 
 	private static String defaultFontPath = null;
 
@@ -250,7 +251,7 @@ public class CCLabel extends CCSprite {
 	}
 
 	public static CGSize getStringSize(CharSequence text, BitmapFont bitmapFont) {
-		TextBounds textBounds = bitmapFont.getMultiLineBounds(text);
+		textBounds.setText(bitmapFont, text);
 		return CGSize.make(textBounds.width, textBounds.height - bitmapFont.getDescent());
 	}
 
@@ -289,7 +290,7 @@ public class CCLabel extends CCSprite {
 		int width = (int) contentSize_.width;
 		int height = (int) contentSize_.height;
 
-		TextBounds textBounds = bitmapFont.getMultiLineBounds(_string);
+		textBounds.setText(bitmapFont, _string);
 
 		int startX, startY;
 		switch (_halignment) {
@@ -348,7 +349,7 @@ public class CCLabel extends CCSprite {
 		}
 
 		bitmapFont.setColor(color.r / 255f, color.g / 255f, color.b / 255f, opacity / 255f);
-		bitmapFont.drawMultiLine(renderSpriteBatch, _string, startX, startY);
+		bitmapFont.draw(renderSpriteBatch, textBounds, startX, startY);
 		renderSpriteBatch.end();
 
 		Pixmap pixmap = ScreenUtils.getFrameBufferPixmap(0, 0, width, height);

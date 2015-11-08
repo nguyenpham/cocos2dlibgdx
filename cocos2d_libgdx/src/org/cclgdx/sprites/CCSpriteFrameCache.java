@@ -105,13 +105,13 @@ public class CCSpriteFrameCache extends CacheMap<CCSpriteFrame> {
 
 			} else if (format == 1 || format == 2) {
 				CGRect regionRect = GeometryUtil.CGRectFromString((String) frameDict.get("frame"));
-				boolean rotated = false;
+				Boolean rotated = Boolean.FALSE;
 
 				// rotation
 				if (format == 2) {
-					rotated = (boolean) frameDict.get("rotated");
+					rotated = (Boolean) frameDict.get("rotated");
 
-					if (rotated) {
+					if (rotated != null && rotated.booleanValue()) {
 						float w = regionRect.width;
 						regionRect.width = regionRect.height;
 						regionRect.height = w;
