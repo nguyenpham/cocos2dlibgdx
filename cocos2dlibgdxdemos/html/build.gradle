@@ -56,12 +56,13 @@ draftWar {
 
 task addSource << {
 	sourceSets.main.compileClasspath += files(project(':core').sourceSets.main.allJava.srcDirs)
+	sourceSets.main.compileClasspath += files(project(':../cocos2d_libgdx').sourceSets.main.allJava.srcDirs)
 }
 
 tasks.compileGwt.dependsOn(addSource)
 tasks.draftCompileGwt.dependsOn(addSource)
 
-sourceCompatibility = 1.6
+sourceCompatibility = 1.7
 sourceSets.main.java.srcDirs = [ "src/" ]
 
 
