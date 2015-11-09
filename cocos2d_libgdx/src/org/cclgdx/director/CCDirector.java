@@ -26,7 +26,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.BitmapFont.TextBounds;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 /**
@@ -271,6 +271,7 @@ public class CCDirector implements InputProcessor {
 	public class DrawFPSNode extends CCNode {
 		private BitmapFont bitmapFont;
 		private float x, y;
+		private GlyphLayout textBounds = new GlyphLayout();
 
 		public DrawFPSNode() {
 			loadFPSFont(null);
@@ -278,7 +279,7 @@ public class CCDirector implements InputProcessor {
 
 		public void loadFPSFont(String fpsFontName) {
 			bitmapFont = CCFontCache.sharedFontCache().get(fpsFontName);
-			TextBounds textBounds = bitmapFont.getMultiLineBounds("0");
+			textBounds.setText(bitmapFont, "0");
 			x = textBounds.width;
 			y = textBounds.height * 1.5f;
 		}
