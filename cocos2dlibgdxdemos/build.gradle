@@ -32,9 +32,10 @@ allprojects {
     }
 }
 
+project(":../cocos2d_libgdx")
+
 project(":desktop") {
     apply plugin: "java"
-
 
     dependencies {
         compile project(":core")
@@ -102,6 +103,8 @@ project(":core") {
 
 
     dependencies {
+        compile project(":../cocos2d_libgdx")
+    
         compile "com.badlogicgames.gdx:gdx:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
         compile "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"

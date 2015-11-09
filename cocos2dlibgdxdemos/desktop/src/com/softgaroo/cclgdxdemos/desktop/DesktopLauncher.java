@@ -1,10 +1,11 @@
-package com.softgaroo.cclgdxdemos;
+package com.softgaroo.cclgdxdemos.desktop;
 
 import org.cclgdx.actions.base.CCActionCallback;
 import org.cclgdx.director.CCDirector;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.softgaroo.cclgdxdemos.DemoMainMenuLayer;
 
 public class DesktopLauncher {
 	public static void main(String[] args) {
